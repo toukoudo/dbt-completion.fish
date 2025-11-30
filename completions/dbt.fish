@@ -37,16 +37,21 @@
 #       models/sources/tags/packages will not be displayed in the tab complete menu
 #
 # INSTALLATION
-#   1. Create a symbolic link to your fish completions directory
-#     ln -s (pwd)/dbt.fish ~/.config/fish/completions/dbt.fish
+#   Using Fisher (recommended):
+#     fisher install YOUR_GITHUB_USERNAME/dbt_completion
+#
+#   Manual installation:
+#   1. Clone or download this repository
+#   2. Create a symbolic link to your fish completions directory
+#     ln -s /path/to/dbt_completion/completions/dbt.fish ~/.config/fish/completions/dbt.fish
 #
 #     Or copy it if you prefer:
-#     cp dbt.fish ~/.config/fish/completions/dbt.fish
+#     cp /path/to/dbt_completion/completions/dbt.fish ~/.config/fish/completions/dbt.fish
 #
-#   2. Reload fish completions or restart fish
+#   3. Reload fish completions or restart fish
 #     fish_update_completions
 #
-#   3. Use it with:
+#   4. Use it with:
 #     dbt run --models snow<tab>
 #
 #

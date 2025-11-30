@@ -13,9 +13,20 @@ This is a port of [dbt-completion.bash](https://github.com/dbt-labs/dbt-completi
 
 ## Installation
 
+### Using Fisher (recommended)
+
+If you have [Fisher](https://github.com/jorgebucaran/fisher) installed:
+
+```fish
+fisher install toukoudo/dbt_completion
+# & restart shell
+```
+
+### Manual installation
+
 ```fish
 # Create a symbolic link to your fish completions directory
-ln -s (pwd)/dbt.fish ~/.config/fish/completions/dbt.fish
+ln -s (pwd)/completions/dbt.fish ~/.config/fish/completions/dbt.fish
 
 # Reload fish completions
 fish_update_completions
@@ -24,7 +35,7 @@ fish_update_completions
 Or copy the file:
 
 ```fish
-cp dbt.fish ~/.config/fish/completions/dbt.fish
+cp completions/dbt.fish ~/.config/fish/completions/dbt.fish
 fish_update_completions
 ```
 
